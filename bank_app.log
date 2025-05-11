@@ -1,0 +1,271 @@
+2025-05-10 18:46:07 - WARNING - Registration failed: Weak password
+2025-05-10 18:46:42 - WARNING - Registration failed: Weak password
+2025-05-10 18:47:18 - WARNING - Registration failed: Weak password
+2025-05-10 18:47:38 - WARNING - Login attempt with non-existent username: alex
+2025-05-11 00:14:15 - WARNING - Registration failed: Weak password
+2025-05-11 00:15:10 - INFO - New user registered: alex
+2025-05-11 00:17:20 - WARNING - Registration failed: Invalid email format
+2025-05-11 00:17:48 - WARNING - Failed MFA verification for alex
+2025-05-11 00:18:01 - WARNING - Login without MFA for alex
+2025-05-11 00:18:01 - INFO - User: alex - Successful login: alex
+2025-05-11 00:18:04 - INFO - User: alex - Account details viewed by: alex
+2025-05-11 00:18:22 - INFO - User: alex - Deposit of $1000.00 to account ACC-4C80BDC4A4
+2025-05-11 00:18:58 - INFO - User: alex - Withdrawal of $1000.00 from account ACC-4C80BDC4A4
+2025-05-11 00:19:07 - INFO - User: alex - Transaction history viewed by: alex
+2025-05-11 08:47:18 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:18 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:18 - ERROR - Login error: no such table: users
+2025-05-11 08:47:18 - WARNING - Unauthorized attempt to access account details
+2025-05-11 08:47:18 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:19 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:19 - ERROR - Login error: no such table: users
+2025-05-11 08:47:19 - INFO - Starting registration for user: anotheruser
+2025-05-11 08:47:19 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:19 - ERROR - Login error: no such table: users
+2025-05-11 08:47:19 - WARNING - Unauthorized attempt to access account details
+2025-05-11 08:47:19 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:20 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:20 - ERROR - Login error: no such table: users
+2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:20 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:20 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:20 - ERROR - Login error: no such table: users
+2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:20 - WARNING - Unauthorized withdrawal attempt
+2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:20 - WARNING - Unauthorized attempt to access transaction history
+2025-05-11 08:47:20 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:21 - ERROR - Login error: no such table: users
+2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access transaction history
+2025-05-11 08:47:21 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:21 - ERROR - Login error: no such table: users
+2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access account details
+2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:21 - WARNING - Unauthorized withdrawal attempt
+2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access transaction history
+2025-05-11 08:47:21 - INFO - Starting registration for user: banktest
+2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:21 - ERROR - Login error: no such table: users
+2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
+2025-05-11 08:47:21 - WARNING - Unauthorized withdrawal attempt
+2025-05-11 08:47:23 - INFO - Starting registration for user: locktest
+2025-05-11 08:47:23 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:23 - ERROR - Login error: no such table: users
+2025-05-11 08:47:23 - ERROR - Login error: no such table: users
+2025-05-11 08:47:23 - ERROR - Login error: no such table: users
+2025-05-11 08:47:23 - ERROR - Login error: no such table: users
+2025-05-11 08:47:23 - ERROR - Login error: no such table: users
+2025-05-11 08:47:23 - INFO - Starting registration for user: mfatest
+2025-05-11 08:47:24 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:24 - INFO - Starting registration for user: logintest
+2025-05-11 08:47:24 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 08:47:24 - ERROR - Login error: no such table: users
+2025-05-11 08:47:24 - INFO - Starting registration for user: testuser
+2025-05-11 08:47:25 - ERROR - SQLite error during registration: no such table: users
+2025-05-11 09:24:15 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:16 - INFO - Inserting new user: banktest
+2025-05-11 09:24:16 - INFO - User created with ID: 1
+2025-05-11 09:24:16 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:16 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:16 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:16 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:24:16 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:17 - INFO - Inserting new user: banktest
+2025-05-11 09:24:17 - INFO - User created with ID: 1
+2025-05-11 09:24:17 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:18 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:18 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:18 - INFO - User: banktest - User logged out: banktest
+2025-05-11 09:24:18 - INFO - Starting registration for user: anotheruser
+2025-05-11 09:24:18 - INFO - Inserting new user: anotheruser
+2025-05-11 09:24:18 - INFO - User created with ID: 2
+2025-05-11 09:24:18 - INFO - New user registered successfully: anotheruser
+2025-05-11 09:24:18 - WARNING - Login without MFA for anotheruser
+2025-05-11 09:24:18 - INFO - User: anotheruser - Successful login: anotheruser
+2025-05-11 09:24:18 - INFO - User: anotheruser - Account details viewed by: anotheruser
+2025-05-11 09:24:18 - INFO - User: anotheruser - User logged out: anotheruser
+2025-05-11 09:24:19 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:19 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:19 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:19 - INFO - Inserting new user: banktest
+2025-05-11 09:24:19 - INFO - User created with ID: 1
+2025-05-11 09:24:19 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:20 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:20 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:20 - INFO - User: banktest - Deposit of $100.50 to account ACC-3841DF1DDB
+2025-05-11 09:24:20 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:24:20 - WARNING - User: banktest - Invalid deposit amount attempted: -50
+2025-05-11 09:24:20 - WARNING - User: banktest - Invalid deposit amount attempted: abc
+2025-05-11 09:24:20 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:21 - INFO - Inserting new user: banktest
+2025-05-11 09:24:21 - INFO - User created with ID: 1
+2025-05-11 09:24:21 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:21 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:21 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:21 - INFO - User: banktest - Deposit of $100.00 to account ACC-45E9EADB03
+2025-05-11 09:24:21 - INFO - User: banktest - Withdrawal of $25.00 from account ACC-45E9EADB03
+2025-05-11 09:24:21 - INFO - User: banktest - Deposit of $50.00 to account ACC-45E9EADB03
+2025-05-11 09:24:21 - INFO - User: banktest - Transaction history viewed by: banktest
+2025-05-11 09:24:21 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:22 - INFO - Inserting new user: banktest
+2025-05-11 09:24:22 - INFO - User created with ID: 1
+2025-05-11 09:24:22 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:22 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:22 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:22 - INFO - User: banktest - Deposit of $100.00 to account ACC-C774817683
+2025-05-11 09:24:22 - INFO - User: banktest - Transaction history viewed by: banktest
+2025-05-11 09:24:22 - WARNING - User: banktest - Transaction verification failed: 40b72bd7-fcb8-436b-b5eb-e0df4c282654
+2025-05-11 09:24:22 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:23 - INFO - Inserting new user: banktest
+2025-05-11 09:24:23 - INFO - User created with ID: 1
+2025-05-11 09:24:23 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:23 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:23 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:23 - INFO - User: banktest - User logged out: banktest
+2025-05-11 09:24:23 - WARNING - Unauthorized attempt to access account details
+2025-05-11 09:24:23 - WARNING - Unauthorized deposit attempt
+2025-05-11 09:24:23 - WARNING - Unauthorized withdrawal attempt
+2025-05-11 09:24:23 - WARNING - Unauthorized attempt to access transaction history
+2025-05-11 09:24:23 - INFO - Starting registration for user: banktest
+2025-05-11 09:24:24 - INFO - Inserting new user: banktest
+2025-05-11 09:24:24 - INFO - User created with ID: 1
+2025-05-11 09:24:24 - INFO - New user registered successfully: banktest
+2025-05-11 09:24:24 - WARNING - Login without MFA for banktest
+2025-05-11 09:24:24 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:24:24 - INFO - User: banktest - Deposit of $200.00 to account ACC-5B0CD79F0C
+2025-05-11 09:24:24 - INFO - User: banktest - Withdrawal of $50.75 from account ACC-5B0CD79F0C
+2025-05-11 09:24:24 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:24:24 - WARNING - User: banktest - Insufficient funds for withdrawal: 1000.0
+2025-05-11 09:24:26 - INFO - Starting registration for user: locktest
+2025-05-11 09:24:26 - INFO - Inserting new user: locktest
+2025-05-11 09:24:26 - INFO - User created with ID: 1
+2025-05-11 09:24:26 - INFO - New user registered successfully: locktest
+2025-05-11 09:24:27 - WARNING - Failed login attempt for locktest. Attempt 1/5
+2025-05-11 09:24:27 - WARNING - Failed login attempt for locktest. Attempt 2/5
+2025-05-11 09:24:28 - WARNING - Failed login attempt for locktest. Attempt 3/5
+2025-05-11 09:24:29 - WARNING - Failed login attempt for locktest. Attempt 4/5
+2025-05-11 09:24:29 - WARNING - Account locked due to multiple failed attempts: locktest
+2025-05-11 09:24:29 - WARNING - Login attempt on locked account: locktest
+2025-05-11 09:24:29 - INFO - Starting registration for user: logintest
+2025-05-11 09:24:30 - INFO - Inserting new user: logintest
+2025-05-11 09:24:30 - INFO - User created with ID: 1
+2025-05-11 09:24:30 - INFO - New user registered successfully: logintest
+2025-05-11 09:24:31 - WARNING - Login without MFA for logintest
+2025-05-11 09:24:31 - INFO - User: logintest - Successful login: logintest
+2025-05-11 09:24:31 - INFO - User: logintest - User logged out: logintest
+2025-05-11 09:24:31 - WARNING - Failed login attempt for logintest. Attempt 1/5
+2025-05-11 09:24:31 - WARNING - Login attempt with non-existent username: nonexistent
+2025-05-11 09:24:31 - INFO - Starting registration for user: testuser
+2025-05-11 09:24:32 - INFO - Inserting new user: testuser
+2025-05-11 09:24:32 - INFO - User created with ID: 1
+2025-05-11 09:24:32 - INFO - New user registered successfully: testuser
+2025-05-11 09:24:32 - INFO - Starting registration for user: testuser
+2025-05-11 09:24:33 - WARNING - Registration failed: Username testuser already exists
+2025-05-11 09:24:33 - INFO - Starting registration for user: anotheruser
+2025-05-11 09:24:33 - WARNING - Registration failed: Email already registered
+2025-05-11 09:24:33 - WARNING - Registration failed: Invalid username format
+2025-05-11 09:24:33 - WARNING - Registration failed: Weak password
+2025-05-11 09:40:53 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:53 - INFO - Inserting new user: banktest
+2025-05-11 09:40:53 - INFO - User created with ID: 1
+2025-05-11 09:40:53 - INFO - New user registered successfully: banktest
+2025-05-11 09:40:54 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:54 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:54 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:40:54 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:54 - INFO - Inserting new user: banktest
+2025-05-11 09:40:54 - INFO - User created with ID: 1
+2025-05-11 09:40:54 - INFO - New user registered successfully: banktest
+2025-05-11 09:40:55 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:55 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:55 - INFO - User: banktest - User logged out: banktest
+2025-05-11 09:40:55 - INFO - Starting registration for user: anotheruser
+2025-05-11 09:40:55 - INFO - Inserting new user: anotheruser
+2025-05-11 09:40:55 - INFO - User created with ID: 2
+2025-05-11 09:40:55 - INFO - New user registered successfully: anotheruser
+2025-05-11 09:40:55 - WARNING - Login without MFA for anotheruser
+2025-05-11 09:40:55 - INFO - User: anotheruser - Successful login: anotheruser
+2025-05-11 09:40:55 - INFO - User: anotheruser - Account details viewed by: anotheruser
+2025-05-11 09:40:55 - INFO - User: anotheruser - User logged out: anotheruser
+2025-05-11 09:40:56 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:56 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:56 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:56 - INFO - Inserting new user: banktest
+2025-05-11 09:40:56 - INFO - User created with ID: 1
+2025-05-11 09:40:56 - INFO - New user registered successfully: banktest
+2025-05-11 09:40:57 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:57 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:57 - INFO - User: banktest - Deposit of $100.50 to account ACC-B3A6B9839C
+2025-05-11 09:40:57 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:40:57 - WARNING - User: banktest - Invalid deposit amount attempted: -50
+2025-05-11 09:40:57 - WARNING - User: banktest - Invalid deposit amount attempted: abc
+2025-05-11 09:40:57 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:57 - INFO - Inserting new user: banktest
+2025-05-11 09:40:57 - INFO - User created with ID: 1
+2025-05-11 09:40:57 - INFO - New user registered successfully: banktest
+2025-05-11 09:40:58 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:58 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:58 - INFO - User: banktest - Deposit of $100.00 to account ACC-918E269779
+2025-05-11 09:40:58 - INFO - User: banktest - Transaction history viewed by: banktest
+2025-05-11 09:40:58 - INFO - User: banktest - Withdrawal of $25.00 from account ACC-918E269779
+2025-05-11 09:40:58 - INFO - User: banktest - Deposit of $50.00 to account ACC-918E269779
+2025-05-11 09:40:58 - INFO - User: banktest - Transaction history viewed by: banktest
+2025-05-11 09:40:58 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:58 - INFO - Inserting new user: banktest
+2025-05-11 09:40:58 - INFO - User created with ID: 1
+2025-05-11 09:40:58 - INFO - New user registered successfully: banktest
+2025-05-11 09:40:59 - WARNING - Login without MFA for banktest
+2025-05-11 09:40:59 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:40:59 - INFO - User: banktest - User logged out: banktest
+2025-05-11 09:40:59 - WARNING - Unauthorized attempt to access account details
+2025-05-11 09:40:59 - WARNING - Unauthorized deposit attempt
+2025-05-11 09:40:59 - WARNING - Unauthorized withdrawal attempt
+2025-05-11 09:40:59 - WARNING - Unauthorized attempt to access transaction history
+2025-05-11 09:40:59 - INFO - Starting registration for user: banktest
+2025-05-11 09:40:59 - INFO - Inserting new user: banktest
+2025-05-11 09:40:59 - INFO - User created with ID: 1
+2025-05-11 09:40:59 - INFO - New user registered successfully: banktest
+2025-05-11 09:41:00 - WARNING - Login without MFA for banktest
+2025-05-11 09:41:00 - INFO - User: banktest - Successful login: banktest
+2025-05-11 09:41:00 - INFO - User: banktest - Deposit of $200.00 to account ACC-5536F7B2A3
+2025-05-11 09:41:00 - INFO - User: banktest - Withdrawal of $50.75 from account ACC-5536F7B2A3
+2025-05-11 09:41:00 - INFO - User: banktest - Account details viewed by: banktest
+2025-05-11 09:41:00 - WARNING - User: banktest - Insufficient funds for withdrawal: 1000.0
+2025-05-11 09:41:01 - INFO - Starting registration for user: locktest
+2025-05-11 09:41:01 - INFO - Inserting new user: locktest
+2025-05-11 09:41:01 - INFO - User created with ID: 1
+2025-05-11 09:41:01 - INFO - New user registered successfully: locktest
+2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 1/5
+2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 2/5
+2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 3/5
+2025-05-11 09:41:03 - WARNING - Failed login attempt for locktest. Attempt 4/5
+2025-05-11 09:41:03 - WARNING - Account locked due to multiple failed attempts: locktest
+2025-05-11 09:41:03 - WARNING - Login attempt on locked account: locktest
+2025-05-11 09:41:04 - INFO - Starting registration for user: logintest
+2025-05-11 09:41:05 - INFO - Inserting new user: logintest
+2025-05-11 09:41:05 - INFO - User created with ID: 1
+2025-05-11 09:41:05 - INFO - New user registered successfully: logintest
+2025-05-11 09:41:05 - WARNING - Login without MFA for logintest
+2025-05-11 09:41:05 - INFO - User: logintest - Successful login: logintest
+2025-05-11 09:41:05 - INFO - User: logintest - User logged out: logintest
+2025-05-11 09:41:05 - WARNING - Failed login attempt for logintest. Attempt 1/5
+2025-05-11 09:41:05 - WARNING - Login attempt with non-existent username: nonexistent
+2025-05-11 09:41:07 - INFO - Starting registration for user: testuser
+2025-05-11 09:41:07 - INFO - Inserting new user: testuser
+2025-05-11 09:41:07 - INFO - User created with ID: 1
+2025-05-11 09:41:07 - INFO - New user registered successfully: testuser
+2025-05-11 09:41:07 - INFO - Starting registration for user: testuser
+2025-05-11 09:41:07 - WARNING - Registration failed: Username testuser already exists
+2025-05-11 09:41:07 - INFO - Starting registration for user: anotheruser
+2025-05-11 09:41:08 - WARNING - Registration failed: Email already registered
+2025-05-11 09:41:08 - WARNING - Registration failed: Invalid username format
+2025-05-11 09:41:08 - WARNING - Registration failed: Weak password
+2025-05-11 15:48:02 - INFO - Database connection verified
+2025-05-11 15:48:02 - INFO - Application initialized successfully
+2025-05-11 15:48:41 - WARNING - Login without MFA for alex
+2025-05-11 15:48:41 - INFO - User: alex - Successful login: alex
+2025-05-11 15:48:56 - INFO - User: alex - User logged out: alex
+2025-05-11 15:49:15 - WARNING - Failed MFA verification for alex
