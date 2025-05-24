@@ -57,12 +57,14 @@ The project consists of two main components:
 
 ## Installation
 
-### 3. Install Dependencies
+1. Git Clone the repository
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Optional: Install QR Code Support
+### 3. Optional: Install QR Code Support
 ```bash
 # For QR code generation during MFA setup
 pip install qrcode[pil]
