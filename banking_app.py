@@ -15,6 +15,16 @@ from cryptography.fernet import Fernet  # For encryption
 import uuid  # For generating unique transaction IDs
 from datetime import datetime
 import getpass
+# Optional QR code support - gracefully handle if not installed
+try:
+    import qrcode
+    QR_CODE_AVAILABLE = True
+except ImportError:
+    QR_CODE_AVAILABLE = False
+    print("Note: qrcode library not found. QR codes will not be available.")
+
+from io import BytesIO
+import base64
 
 # Configure secure logging
 logging.basicConfig(
@@ -79,17 +89,18 @@ def validate_input(input_data, input_type):
         return re.match(pattern, input_data) is not None
     
     elif input_type == "password":
-        # Password should have at least 8 chars, with uppercase, lowercase, and numbers
+        # Password should have at least 8 chars, with uppercase, lowercase, numbers, and special chars
         # Check length first
         if len(input_data) < 8:
             return False
             
-        # Check for at least one uppercase, one lowercase, and one digit
+        # Check for at least one uppercase, one lowercase, one digit, and one special character
         has_upper = any(c.isupper() for c in input_data)
         has_lower = any(c.islower() for c in input_data)
         has_digit = any(c.isdigit() for c in input_data)
+        has_special = any(c in "!@#$%^&*()_+-=[]{}|;:,.<>?" for c in input_data)
         
-        return has_upper and has_lower and has_digit
+        return has_upper and has_lower and has_digit and has_special
     
     elif input_type == "amount":
         # Amount should be a positive number
@@ -102,6 +113,11 @@ def validate_input(input_data, input_type):
     elif input_type == "email":
         # Basic email validation
         pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+        return re.match(pattern, input_data) is not None
+    
+    elif input_type == "mfa_code":
+        # MFA code should be 6 digits
+        pattern = r'^\d{6}$'
         return re.match(pattern, input_data) is not None
     
     return False
@@ -125,7 +141,67 @@ def secure_log(message, log_level="INFO", user=None):
     elif log_level == "CRITICAL":
         logging.critical(message)
 
-# Database setup
+def generate_qr_code(secret, username, issuer="SecureBankApp"):
+    """Generate QR code for MFA setup (if qrcode library is available)"""
+    if not QR_CODE_AVAILABLE:
+        return None, None
+        
+    try:
+        # Create the provisioning URI
+        totp_uri = pyotp.totp.TOTP(secret).provisioning_uri(
+            name=username,
+            issuer_name=issuer
+        )
+        
+        # Generate QR code
+        qr = qrcode.QRCode(version=1, box_size=10, border=5)
+        qr.add_data(totp_uri)
+        qr.make(fit=True)
+        
+        return qr, totp_uri
+    except Exception as e:
+        secure_log(f"Error generating QR code: {str(e)}", "ERROR")
+        return None, None
+
+# Database setup and migration
+def check_and_migrate_database():
+    """Check database schema and migrate if necessary"""
+    conn = sqlite3.connect('bank.db')
+    cursor = conn.cursor()
+    
+    try:
+        # Check if mfa_enabled column exists
+        cursor.execute("PRAGMA table_info(users)")
+        columns = [column[1] for column in cursor.fetchall()]
+        
+        if 'mfa_enabled' not in columns:
+            secure_log("Adding mfa_enabled column to users table", "INFO")
+            cursor.execute("ALTER TABLE users ADD COLUMN mfa_enabled INTEGER DEFAULT 1")
+        
+        # Check if mfa_backup_codes table exists
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='mfa_backup_codes'")
+        if not cursor.fetchone():
+            secure_log("Creating mfa_backup_codes table", "INFO")
+            cursor.execute('''
+            CREATE TABLE mfa_backup_codes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                code_hash TEXT NOT NULL,
+                used INTEGER DEFAULT 0,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            )
+            ''')
+        
+        conn.commit()
+        secure_log("Database migration completed successfully", "INFO")
+        
+    except sqlite3.Error as e:
+        secure_log(f"Database migration error: {str(e)}", "ERROR")
+        conn.rollback()
+    finally:
+        conn.close()
+
 def setup_database():
     """Set up the SQLite database with secure schema"""
     # Check if database file exists
@@ -142,6 +218,7 @@ def setup_database():
         password_hash TEXT NOT NULL,
         email TEXT UNIQUE NOT NULL,
         mfa_secret TEXT NOT NULL,
+        mfa_enabled INTEGER DEFAULT 1,
         account_locked INTEGER DEFAULT 0,
         failed_attempts INTEGER DEFAULT 0,
         last_login TIMESTAMP,
@@ -190,8 +267,23 @@ def setup_database():
     )
     ''')
     
+    # Create MFA backup codes table
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS mfa_backup_codes (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        code_hash TEXT NOT NULL,
+        used INTEGER DEFAULT 0,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (user_id) REFERENCES users(id)
+    )
+    ''')
+    
     conn.commit()
     conn.close()
+    
+    # Run migration check
+    check_and_migrate_database()
     
     # Log database creation/check
     if not db_exists:
@@ -210,8 +302,32 @@ class UserAuth:
         """Establish a secure database connection"""
         return sqlite3.connect(self.db_path)
     
+    def generate_backup_codes(self, user_id):
+        """Generate backup codes for MFA"""
+        backup_codes = []
+        try:
+            conn = self.connect_db()
+            cursor = conn.cursor()
+            
+            for _ in range(10):  # Generate 10 backup codes
+                code = secrets.token_hex(4).upper()  # 8-character hex code
+                code_hash = hashlib.sha256(code.encode()).hexdigest()
+                
+                cursor.execute(
+                    "INSERT INTO mfa_backup_codes (user_id, code_hash) VALUES (?, ?)",
+                    (user_id, code_hash)
+                )
+                backup_codes.append(code)
+            
+            conn.commit()
+            conn.close()
+            return backup_codes
+        except Exception as e:
+            secure_log(f"Error generating backup codes: {str(e)}", "ERROR")
+            return []
+    
     def register_user(self, username, password, email):
-        """Register a new user with secure password storage"""
+        """Register a new user with secure password storage and mandatory MFA"""
         # Input validation
         if not validate_input(username, "username"):
             secure_log(f"Registration failed: Invalid username format", "WARNING")
@@ -219,7 +335,7 @@ class UserAuth:
         
         if not validate_input(password, "password"):
             secure_log(f"Registration failed: Weak password", "WARNING")
-            return False, "Password must be at least 8 characters with uppercase, lowercase, and numbers."
+            return False, "Password must be at least 8 characters with uppercase, lowercase, numbers, and special characters."
         
         if not validate_input(email, "email"):
             secure_log(f"Registration failed: Invalid email format", "WARNING")
@@ -255,8 +371,8 @@ class UserAuth:
             
             # Insert the new user
             cursor.execute(
-                "INSERT INTO users (username, password_hash, email, mfa_secret) VALUES (?, ?, ?, ?)",
-                (username, password_hash, email, mfa_secret)
+                "INSERT INTO users (username, password_hash, email, mfa_secret, mfa_enabled) VALUES (?, ?, ?, ?, ?)",
+                (username, password_hash, email, mfa_secret, 1)
             )
             
             # Get the user id
@@ -277,6 +393,9 @@ class UserAuth:
                 (user_id, account_number, 0.0)
             )
             
+            # Generate backup codes
+            backup_codes = self.generate_backup_codes(user_id)
+            
             conn.commit()
             
             # Verify the user was created
@@ -288,8 +407,42 @@ class UserAuth:
                 
             conn.close()
             
+            # Generate QR code for MFA setup
+            qr_code, totp_uri = generate_qr_code(mfa_secret, username)
+            
             secure_log(f"New user registered successfully: {username}", "INFO")
-            return True, f"User registered successfully. Your account number is {account_number}. Your MFA secret is {mfa_secret} (save this for login)"
+            
+            success_message = f"""
+User registered successfully!
+Account Number: {account_number}
+
+=== MFA SETUP REQUIRED ===
+MFA Secret: {mfa_secret}
+
+Please set up your authenticator app:
+1. Install Google Authenticator, Authy, or similar app
+2. Add account manually with this secret: {mfa_secret}
+3. Account name: {username}
+4. Issuer: SecureBankApp
+
+Your backup codes (save these securely):
+{', '.join(backup_codes)}
+
+IMPORTANT: MFA is MANDATORY for login. Save your secret and backup codes!
+"""
+            
+            # Try to display QR code if available
+            if QR_CODE_AVAILABLE and qr_code:
+                try:
+                    print("\n=== QR CODE FOR MFA SETUP ===")
+                    qr_code.print_ascii(invert=True)
+                    print("=== END QR CODE ===\n")
+                except Exception as e:
+                    secure_log(f"QR code display error: {str(e)}", "WARNING")
+            elif not QR_CODE_AVAILABLE:
+                success_message += "\nNote: Install 'qrcode' library for QR code generation: pip install qrcode[pil]"
+            
+            return True, success_message
         
         except sqlite3.Error as e:
             secure_log(f"SQLite error during registration: {str(e)}", "ERROR")
@@ -298,15 +451,48 @@ class UserAuth:
             secure_log(f"Registration error: {str(e)}", "ERROR")
             return False, "An error occurred during registration."
     
-    def login(self, username, password, mfa_code=None):
-        """Authenticate a user with username, password and MFA"""
+    def verify_backup_code(self, user_id, backup_code):
+        """Verify a backup code"""
+        try:
+            conn = self.connect_db()
+            cursor = conn.cursor()
+            
+            code_hash = hashlib.sha256(backup_code.encode()).hexdigest()
+            
+            # Check if backup code exists and hasn't been used
+            cursor.execute(
+                "SELECT id FROM mfa_backup_codes WHERE user_id = ? AND code_hash = ? AND used = 0",
+                (user_id, code_hash)
+            )
+            
+            backup_code_record = cursor.fetchone()
+            
+            if backup_code_record:
+                # Mark the backup code as used
+                cursor.execute(
+                    "UPDATE mfa_backup_codes SET used = 1 WHERE id = ?",
+                    (backup_code_record[0],)
+                )
+                conn.commit()
+                conn.close()
+                return True
+            
+            conn.close()
+            return False
+            
+        except Exception as e:
+            secure_log(f"Error verifying backup code: {str(e)}", "ERROR")
+            return False
+    
+    def login(self, username, password, mfa_code):
+        """Authenticate a user with username, password and mandatory MFA"""
         try:
             conn = self.connect_db()
             cursor = conn.cursor()
             
             # Get user information
             cursor.execute(
-                "SELECT id, username, password_hash, mfa_secret, account_locked, failed_attempts FROM users WHERE username = ?",
+                "SELECT id, username, password_hash, mfa_secret, account_locked, failed_attempts, mfa_enabled FROM users WHERE username = ?",
                 (username,)
             )
             user = cursor.fetchone()
@@ -316,7 +502,7 @@ class UserAuth:
                 # Return generic message to prevent username enumeration
                 return False, "Invalid username or password."
             
-            user_id, db_username, password_hash, mfa_secret, account_locked, failed_attempts = user
+            user_id, db_username, password_hash, mfa_secret, account_locked, failed_attempts, mfa_enabled = user
             
             # Check if account is locked
             if account_locked:
@@ -349,17 +535,33 @@ class UserAuth:
                 conn.close()
                 return False, "Invalid username or password."
             
-            # Password is correct, verify MFA if required
-            if mfa_code:
+            # Password is correct, now verify MFA (MANDATORY)
+            if not mfa_code:
+                secure_log(f"Login attempt without MFA code for {username}", "WARNING")
+                conn.close()
+                return False, "MFA code is required for login."
+            
+            # Validate MFA code format
+            if not validate_input(mfa_code, "mfa_code"):
+                # Check if it might be a backup code (8 characters)
+                if len(mfa_code) == 8 and mfa_code.isalnum():
+                    if self.verify_backup_code(user_id, mfa_code.upper()):
+                        secure_log(f"Successful login with backup code: {username}", "INFO", username)
+                    else:
+                        secure_log(f"Failed backup code verification for {username}", "WARNING")
+                        conn.close()
+                        return False, "Invalid backup code."
+                else:
+                    secure_log(f"Invalid MFA code format for {username}", "WARNING")
+                    conn.close()
+                    return False, "Invalid MFA code format. Enter 6-digit code or 8-character backup code."
+            else:
+                # Verify TOTP code
                 totp = pyotp.TOTP(mfa_secret)
-                if not totp.verify(mfa_code):
+                if not totp.verify(mfa_code, valid_window=1):  # Allow 30-second window
                     secure_log(f"Failed MFA verification for {username}", "WARNING")
                     conn.close()
                     return False, "Invalid MFA code."
-            else:
-                # In a real implementation, MFA would always be required
-                # For testing purposes, we're making it optional
-                secure_log(f"Login without MFA for {username}", "WARNING")
             
             # Reset failed attempts and update last login
             cursor.execute(
@@ -717,7 +919,7 @@ class BankingApp:
             cursor = conn.cursor()
             cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
             tables = cursor.fetchall()
-            if not tables or len(tables) < 4:  # We expect at least 4 tables
+            if not tables or len(tables) < 5:  # We expect at least 5 tables now
                 secure_log("Database tables not properly created", "ERROR")
                 print("Error initializing database. Please check logs.")
             conn.close()
@@ -741,7 +943,7 @@ class BankingApp:
     def run(self):
         """Run the banking application with a simple CLI interface"""
         print("\n===== Secure Banking Application =====")
-        print("Version 1.1 - Improved Registration Process")
+        print("Version 2.0 - Mandatory MFA with Backup Codes")
         
         while True:
             if self.user_auth.is_authenticated():
@@ -807,7 +1009,7 @@ class BankingApp:
             return
         
         # Prompt for password with requirements
-        print("Password requirements: at least 8 characters with uppercase, lowercase, and numbers")
+        print("Password requirements: at least 8 characters with uppercase, lowercase, numbers, and special characters")
         password = getpass.getpass("Enter password: ")
         
         # Validate password immediately
@@ -835,7 +1037,8 @@ class BankingApp:
         
         # If successful, provide clear confirmation
         if success:
-            print("Registration successful! You can now log in with your credentials.")
+            print("\nRegistration successful! Please set up your authenticator app before logging in.")
+            print("MFA is MANDATORY for all logins.")
     
     def login_user(self):
         """Login an existing user"""
@@ -843,14 +1046,16 @@ class BankingApp:
         username = input("Enter username: ")
         password = getpass.getpass("Enter password: ")
         
-        # For MFA
-        use_mfa = input("Do you have an MFA code? (y/n): ").lower() == 'y'
-        mfa_code = None
+        print("\nMFA is required for login.")
+        print("Enter your 6-digit authenticator code OR 8-character backup code:")
+        mfa_code = input("MFA Code: ")
         
-        if use_mfa:
-            mfa_code = input("Enter MFA code: ")
+        if not mfa_code.strip():
+            print("MFA code is required. Login cancelled.")
+            return
         
-        success, message = self.user_auth.login(username, password, mfa_code)
+        print("Authenticating...")
+        success, message = self.user_auth.login(username, password, mfa_code.strip())
         print(message)
     
     def show_account_details(self):
@@ -928,5 +1133,12 @@ class BankingApp:
 
 # Run the application if executed directly
 if __name__ == "__main__":
-    app = BankingApp()
-    app.run()
+    try:
+        app = BankingApp()
+        app.run()
+    except KeyboardInterrupt:
+        print("\n\nApplication terminated by user.")
+    except Exception as e:
+        secure_log(f"Critical application error: {str(e)}", "CRITICAL")
+        print(f"Critical application error: {str(e)}")
+        print("Please check the logs for more details.")

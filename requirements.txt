@@ -4,3 +4,4 @@ cryptography==41.0.3
 pytest==7.4.0
 pytest-cov==4.1.0
 pylint==2.17.5
+zxcvbn-python==4.4.24

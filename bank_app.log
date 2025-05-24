@@ -1,271 +1,658 @@
-2025-05-10 18:46:07 - WARNING - Registration failed: Weak password
-2025-05-10 18:46:42 - WARNING - Registration failed: Weak password
-2025-05-10 18:47:18 - WARNING - Registration failed: Weak password
-2025-05-10 18:47:38 - WARNING - Login attempt with non-existent username: alex
-2025-05-11 00:14:15 - WARNING - Registration failed: Weak password
-2025-05-11 00:15:10 - INFO - New user registered: alex
-2025-05-11 00:17:20 - WARNING - Registration failed: Invalid email format
-2025-05-11 00:17:48 - WARNING - Failed MFA verification for alex
-2025-05-11 00:18:01 - WARNING - Login without MFA for alex
-2025-05-11 00:18:01 - INFO - User: alex - Successful login: alex
-2025-05-11 00:18:04 - INFO - User: alex - Account details viewed by: alex
-2025-05-11 00:18:22 - INFO - User: alex - Deposit of $1000.00 to account ACC-4C80BDC4A4
-2025-05-11 00:18:58 - INFO - User: alex - Withdrawal of $1000.00 from account ACC-4C80BDC4A4
-2025-05-11 00:19:07 - INFO - User: alex - Transaction history viewed by: alex
-2025-05-11 08:47:18 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:18 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:18 - ERROR - Login error: no such table: users
-2025-05-11 08:47:18 - WARNING - Unauthorized attempt to access account details
-2025-05-11 08:47:18 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:19 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:19 - ERROR - Login error: no such table: users
-2025-05-11 08:47:19 - INFO - Starting registration for user: anotheruser
-2025-05-11 08:47:19 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:19 - ERROR - Login error: no such table: users
-2025-05-11 08:47:19 - WARNING - Unauthorized attempt to access account details
-2025-05-11 08:47:19 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:20 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:20 - ERROR - Login error: no such table: users
-2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:20 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:20 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:20 - ERROR - Login error: no such table: users
-2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:20 - WARNING - Unauthorized withdrawal attempt
-2025-05-11 08:47:20 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:20 - WARNING - Unauthorized attempt to access transaction history
-2025-05-11 08:47:20 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:21 - ERROR - Login error: no such table: users
-2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access transaction history
-2025-05-11 08:47:21 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:21 - ERROR - Login error: no such table: users
-2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access account details
-2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:21 - WARNING - Unauthorized withdrawal attempt
-2025-05-11 08:47:21 - WARNING - Unauthorized attempt to access transaction history
-2025-05-11 08:47:21 - INFO - Starting registration for user: banktest
-2025-05-11 08:47:21 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:21 - ERROR - Login error: no such table: users
-2025-05-11 08:47:21 - WARNING - Unauthorized deposit attempt
-2025-05-11 08:47:21 - WARNING - Unauthorized withdrawal attempt
-2025-05-11 08:47:23 - INFO - Starting registration for user: locktest
-2025-05-11 08:47:23 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:23 - ERROR - Login error: no such table: users
-2025-05-11 08:47:23 - ERROR - Login error: no such table: users
-2025-05-11 08:47:23 - ERROR - Login error: no such table: users
-2025-05-11 08:47:23 - ERROR - Login error: no such table: users
-2025-05-11 08:47:23 - ERROR - Login error: no such table: users
-2025-05-11 08:47:23 - INFO - Starting registration for user: mfatest
-2025-05-11 08:47:24 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:24 - INFO - Starting registration for user: logintest
-2025-05-11 08:47:24 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 08:47:24 - ERROR - Login error: no such table: users
-2025-05-11 08:47:24 - INFO - Starting registration for user: testuser
-2025-05-11 08:47:25 - ERROR - SQLite error during registration: no such table: users
-2025-05-11 09:24:15 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:16 - INFO - Inserting new user: banktest
-2025-05-11 09:24:16 - INFO - User created with ID: 1
-2025-05-11 09:24:16 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:16 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:16 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:16 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:24:16 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:17 - INFO - Inserting new user: banktest
-2025-05-11 09:24:17 - INFO - User created with ID: 1
-2025-05-11 09:24:17 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:18 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:18 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:18 - INFO - User: banktest - User logged out: banktest
-2025-05-11 09:24:18 - INFO - Starting registration for user: anotheruser
-2025-05-11 09:24:18 - INFO - Inserting new user: anotheruser
-2025-05-11 09:24:18 - INFO - User created with ID: 2
-2025-05-11 09:24:18 - INFO - New user registered successfully: anotheruser
-2025-05-11 09:24:18 - WARNING - Login without MFA for anotheruser
-2025-05-11 09:24:18 - INFO - User: anotheruser - Successful login: anotheruser
-2025-05-11 09:24:18 - INFO - User: anotheruser - Account details viewed by: anotheruser
-2025-05-11 09:24:18 - INFO - User: anotheruser - User logged out: anotheruser
-2025-05-11 09:24:19 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:19 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:19 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:19 - INFO - Inserting new user: banktest
-2025-05-11 09:24:19 - INFO - User created with ID: 1
-2025-05-11 09:24:19 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:20 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:20 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:20 - INFO - User: banktest - Deposit of $100.50 to account ACC-3841DF1DDB
-2025-05-11 09:24:20 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:24:20 - WARNING - User: banktest - Invalid deposit amount attempted: -50
-2025-05-11 09:24:20 - WARNING - User: banktest - Invalid deposit amount attempted: abc
-2025-05-11 09:24:20 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:21 - INFO - Inserting new user: banktest
-2025-05-11 09:24:21 - INFO - User created with ID: 1
-2025-05-11 09:24:21 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:21 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:21 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:21 - INFO - User: banktest - Deposit of $100.00 to account ACC-45E9EADB03
-2025-05-11 09:24:21 - INFO - User: banktest - Withdrawal of $25.00 from account ACC-45E9EADB03
-2025-05-11 09:24:21 - INFO - User: banktest - Deposit of $50.00 to account ACC-45E9EADB03
-2025-05-11 09:24:21 - INFO - User: banktest - Transaction history viewed by: banktest
-2025-05-11 09:24:21 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:22 - INFO - Inserting new user: banktest
-2025-05-11 09:24:22 - INFO - User created with ID: 1
-2025-05-11 09:24:22 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:22 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:22 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:22 - INFO - User: banktest - Deposit of $100.00 to account ACC-C774817683
-2025-05-11 09:24:22 - INFO - User: banktest - Transaction history viewed by: banktest
-2025-05-11 09:24:22 - WARNING - User: banktest - Transaction verification failed: 40b72bd7-fcb8-436b-b5eb-e0df4c282654
-2025-05-11 09:24:22 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:23 - INFO - Inserting new user: banktest
-2025-05-11 09:24:23 - INFO - User created with ID: 1
-2025-05-11 09:24:23 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:23 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:23 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:23 - INFO - User: banktest - User logged out: banktest
-2025-05-11 09:24:23 - WARNING - Unauthorized attempt to access account details
-2025-05-11 09:24:23 - WARNING - Unauthorized deposit attempt
-2025-05-11 09:24:23 - WARNING - Unauthorized withdrawal attempt
-2025-05-11 09:24:23 - WARNING - Unauthorized attempt to access transaction history
-2025-05-11 09:24:23 - INFO - Starting registration for user: banktest
-2025-05-11 09:24:24 - INFO - Inserting new user: banktest
-2025-05-11 09:24:24 - INFO - User created with ID: 1
-2025-05-11 09:24:24 - INFO - New user registered successfully: banktest
-2025-05-11 09:24:24 - WARNING - Login without MFA for banktest
-2025-05-11 09:24:24 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:24:24 - INFO - User: banktest - Deposit of $200.00 to account ACC-5B0CD79F0C
-2025-05-11 09:24:24 - INFO - User: banktest - Withdrawal of $50.75 from account ACC-5B0CD79F0C
-2025-05-11 09:24:24 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:24:24 - WARNING - User: banktest - Insufficient funds for withdrawal: 1000.0
-2025-05-11 09:24:26 - INFO - Starting registration for user: locktest
-2025-05-11 09:24:26 - INFO - Inserting new user: locktest
-2025-05-11 09:24:26 - INFO - User created with ID: 1
-2025-05-11 09:24:26 - INFO - New user registered successfully: locktest
-2025-05-11 09:24:27 - WARNING - Failed login attempt for locktest. Attempt 1/5
-2025-05-11 09:24:27 - WARNING - Failed login attempt for locktest. Attempt 2/5
-2025-05-11 09:24:28 - WARNING - Failed login attempt for locktest. Attempt 3/5
-2025-05-11 09:24:29 - WARNING - Failed login attempt for locktest. Attempt 4/5
-2025-05-11 09:24:29 - WARNING - Account locked due to multiple failed attempts: locktest
-2025-05-11 09:24:29 - WARNING - Login attempt on locked account: locktest
-2025-05-11 09:24:29 - INFO - Starting registration for user: logintest
-2025-05-11 09:24:30 - INFO - Inserting new user: logintest
-2025-05-11 09:24:30 - INFO - User created with ID: 1
-2025-05-11 09:24:30 - INFO - New user registered successfully: logintest
-2025-05-11 09:24:31 - WARNING - Login without MFA for logintest
-2025-05-11 09:24:31 - INFO - User: logintest - Successful login: logintest
-2025-05-11 09:24:31 - INFO - User: logintest - User logged out: logintest
-2025-05-11 09:24:31 - WARNING - Failed login attempt for logintest. Attempt 1/5
-2025-05-11 09:24:31 - WARNING - Login attempt with non-existent username: nonexistent
-2025-05-11 09:24:31 - INFO - Starting registration for user: testuser
-2025-05-11 09:24:32 - INFO - Inserting new user: testuser
-2025-05-11 09:24:32 - INFO - User created with ID: 1
-2025-05-11 09:24:32 - INFO - New user registered successfully: testuser
-2025-05-11 09:24:32 - INFO - Starting registration for user: testuser
-2025-05-11 09:24:33 - WARNING - Registration failed: Username testuser already exists
-2025-05-11 09:24:33 - INFO - Starting registration for user: anotheruser
-2025-05-11 09:24:33 - WARNING - Registration failed: Email already registered
-2025-05-11 09:24:33 - WARNING - Registration failed: Invalid username format
-2025-05-11 09:24:33 - WARNING - Registration failed: Weak password
-2025-05-11 09:40:53 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:53 - INFO - Inserting new user: banktest
-2025-05-11 09:40:53 - INFO - User created with ID: 1
-2025-05-11 09:40:53 - INFO - New user registered successfully: banktest
-2025-05-11 09:40:54 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:54 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:54 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:40:54 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:54 - INFO - Inserting new user: banktest
-2025-05-11 09:40:54 - INFO - User created with ID: 1
-2025-05-11 09:40:54 - INFO - New user registered successfully: banktest
-2025-05-11 09:40:55 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:55 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:55 - INFO - User: banktest - User logged out: banktest
-2025-05-11 09:40:55 - INFO - Starting registration for user: anotheruser
-2025-05-11 09:40:55 - INFO - Inserting new user: anotheruser
-2025-05-11 09:40:55 - INFO - User created with ID: 2
-2025-05-11 09:40:55 - INFO - New user registered successfully: anotheruser
-2025-05-11 09:40:55 - WARNING - Login without MFA for anotheruser
-2025-05-11 09:40:55 - INFO - User: anotheruser - Successful login: anotheruser
-2025-05-11 09:40:55 - INFO - User: anotheruser - Account details viewed by: anotheruser
-2025-05-11 09:40:55 - INFO - User: anotheruser - User logged out: anotheruser
-2025-05-11 09:40:56 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:56 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:56 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:56 - INFO - Inserting new user: banktest
-2025-05-11 09:40:56 - INFO - User created with ID: 1
-2025-05-11 09:40:56 - INFO - New user registered successfully: banktest
-2025-05-11 09:40:57 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:57 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:57 - INFO - User: banktest - Deposit of $100.50 to account ACC-B3A6B9839C
-2025-05-11 09:40:57 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:40:57 - WARNING - User: banktest - Invalid deposit amount attempted: -50
-2025-05-11 09:40:57 - WARNING - User: banktest - Invalid deposit amount attempted: abc
-2025-05-11 09:40:57 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:57 - INFO - Inserting new user: banktest
-2025-05-11 09:40:57 - INFO - User created with ID: 1
-2025-05-11 09:40:57 - INFO - New user registered successfully: banktest
-2025-05-11 09:40:58 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:58 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:58 - INFO - User: banktest - Deposit of $100.00 to account ACC-918E269779
-2025-05-11 09:40:58 - INFO - User: banktest - Transaction history viewed by: banktest
-2025-05-11 09:40:58 - INFO - User: banktest - Withdrawal of $25.00 from account ACC-918E269779
-2025-05-11 09:40:58 - INFO - User: banktest - Deposit of $50.00 to account ACC-918E269779
-2025-05-11 09:40:58 - INFO - User: banktest - Transaction history viewed by: banktest
-2025-05-11 09:40:58 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:58 - INFO - Inserting new user: banktest
-2025-05-11 09:40:58 - INFO - User created with ID: 1
-2025-05-11 09:40:58 - INFO - New user registered successfully: banktest
-2025-05-11 09:40:59 - WARNING - Login without MFA for banktest
-2025-05-11 09:40:59 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:40:59 - INFO - User: banktest - User logged out: banktest
-2025-05-11 09:40:59 - WARNING - Unauthorized attempt to access account details
-2025-05-11 09:40:59 - WARNING - Unauthorized deposit attempt
-2025-05-11 09:40:59 - WARNING - Unauthorized withdrawal attempt
-2025-05-11 09:40:59 - WARNING - Unauthorized attempt to access transaction history
-2025-05-11 09:40:59 - INFO - Starting registration for user: banktest
-2025-05-11 09:40:59 - INFO - Inserting new user: banktest
-2025-05-11 09:40:59 - INFO - User created with ID: 1
-2025-05-11 09:40:59 - INFO - New user registered successfully: banktest
-2025-05-11 09:41:00 - WARNING - Login without MFA for banktest
-2025-05-11 09:41:00 - INFO - User: banktest - Successful login: banktest
-2025-05-11 09:41:00 - INFO - User: banktest - Deposit of $200.00 to account ACC-5536F7B2A3
-2025-05-11 09:41:00 - INFO - User: banktest - Withdrawal of $50.75 from account ACC-5536F7B2A3
-2025-05-11 09:41:00 - INFO - User: banktest - Account details viewed by: banktest
-2025-05-11 09:41:00 - WARNING - User: banktest - Insufficient funds for withdrawal: 1000.0
-2025-05-11 09:41:01 - INFO - Starting registration for user: locktest
-2025-05-11 09:41:01 - INFO - Inserting new user: locktest
-2025-05-11 09:41:01 - INFO - User created with ID: 1
-2025-05-11 09:41:01 - INFO - New user registered successfully: locktest
-2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 1/5
-2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 2/5
-2025-05-11 09:41:02 - WARNING - Failed login attempt for locktest. Attempt 3/5
-2025-05-11 09:41:03 - WARNING - Failed login attempt for locktest. Attempt 4/5
-2025-05-11 09:41:03 - WARNING - Account locked due to multiple failed attempts: locktest
-2025-05-11 09:41:03 - WARNING - Login attempt on locked account: locktest
-2025-05-11 09:41:04 - INFO - Starting registration for user: logintest
-2025-05-11 09:41:05 - INFO - Inserting new user: logintest
-2025-05-11 09:41:05 - INFO - User created with ID: 1
-2025-05-11 09:41:05 - INFO - New user registered successfully: logintest
-2025-05-11 09:41:05 - WARNING - Login without MFA for logintest
-2025-05-11 09:41:05 - INFO - User: logintest - Successful login: logintest
-2025-05-11 09:41:05 - INFO - User: logintest - User logged out: logintest
-2025-05-11 09:41:05 - WARNING - Failed login attempt for logintest. Attempt 1/5
-2025-05-11 09:41:05 - WARNING - Login attempt with non-existent username: nonexistent
-2025-05-11 09:41:07 - INFO - Starting registration for user: testuser
-2025-05-11 09:41:07 - INFO - Inserting new user: testuser
-2025-05-11 09:41:07 - INFO - User created with ID: 1
-2025-05-11 09:41:07 - INFO - New user registered successfully: testuser
-2025-05-11 09:41:07 - INFO - Starting registration for user: testuser
-2025-05-11 09:41:07 - WARNING - Registration failed: Username testuser already exists
-2025-05-11 09:41:07 - INFO - Starting registration for user: anotheruser
-2025-05-11 09:41:08 - WARNING - Registration failed: Email already registered
-2025-05-11 09:41:08 - WARNING - Registration failed: Invalid username format
-2025-05-11 09:41:08 - WARNING - Registration failed: Weak password
-2025-05-11 15:48:02 - INFO - Database connection verified
-2025-05-11 15:48:02 - INFO - Application initialized successfully
-2025-05-11 15:48:41 - WARNING - Login without MFA for alex
-2025-05-11 15:48:41 - INFO - User: alex - Successful login: alex
-2025-05-11 15:48:56 - INFO - User: alex - User logged out: alex
-2025-05-11 15:49:15 - WARNING - Failed MFA verification for alex
+2025-05-24 07:05:31 - INFO - Database migration completed successfully
+2025-05-24 07:05:31 - INFO - Database connection verified
+2025-05-24 07:05:31 - INFO - Application initialized successfully
+2025-05-24 07:18:12 - INFO - Starting test: test_encryption_security
+2025-05-24 07:18:12 - WARNING - SECURITY ISSUE [MEDIUM]: WEAK_ENCRYPTION - Encrypted data may not have sufficient entropy
+2025-05-24 07:18:12 - INFO - PASS: test_encryption_security - Encryption is secure and robust
+2025-05-24 07:18:12 - INFO - Starting test: test_input_validation_security
+2025-05-24 07:18:12 - INFO - PASS: test_input_validation_security - Input validation resists injection attacks
+2025-05-24 07:18:12 - INFO - Starting test: test_password_hashing_security
+2025-05-24 07:18:13 - WARNING - PERFORMANCE: password_hashing took 0.57s (threshold: 0.1s)
+2025-05-24 07:18:15 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: password
+2025-05-24 07:18:15 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: 123456
+2025-05-24 07:18:16 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: admin
+2025-05-24 07:18:16 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: qwerty
+2025-05-24 07:18:16 - INFO - PASS: test_password_hashing_security - Password hashing is secure
+2025-05-24 07:18:16 - INFO - Starting test: test_transaction_id_security
+2025-05-24 07:18:16 - INFO - PASS: test_transaction_id_security - Transaction IDs are secure and unique
+2025-05-24 07:18:16 - INFO - Starting test: test_brute_force_protection
+2025-05-24 07:18:16 - INFO - Starting registration for user: brutetest
+2025-05-24 07:18:17 - INFO - Inserting new user: brutetest
+2025-05-24 07:18:17 - INFO - User created with ID: 1
+2025-05-24 07:18:28 - INFO - Starting test: test_encryption_security
+2025-05-24 07:18:28 - WARNING - SECURITY ISSUE [MEDIUM]: WEAK_ENCRYPTION - Encrypted data may not have sufficient entropy
+2025-05-24 07:18:28 - INFO - PASS: test_encryption_security - Encryption is secure and robust
+2025-05-24 07:18:28 - INFO - Starting test: test_input_validation_security
+2025-05-24 07:18:28 - INFO - PASS: test_input_validation_security - Input validation resists injection attacks
+2025-05-24 07:18:28 - INFO - Starting test: test_password_hashing_security
+2025-05-24 07:18:29 - WARNING - PERFORMANCE: password_hashing took 0.48s (threshold: 0.1s)
+2025-05-24 07:18:31 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: password
+2025-05-24 07:18:31 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: 123456
+2025-05-24 07:18:31 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: admin
+2025-05-24 07:18:32 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: qwerty
+2025-05-24 07:18:32 - INFO - PASS: test_password_hashing_security - Password hashing is secure
+2025-05-24 07:18:32 - INFO - Starting test: test_transaction_id_security
+2025-05-24 07:18:32 - INFO - PASS: test_transaction_id_security - Transaction IDs are secure and unique
+2025-05-24 07:18:32 - INFO - Starting test: test_brute_force_protection
+2025-05-24 07:18:32 - INFO - Starting registration for user: brutetest
+2025-05-24 07:18:32 - INFO - Inserting new user: brutetest
+2025-05-24 07:18:32 - INFO - User created with ID: 1
+2025-05-24 07:18:38 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:18:38 - INFO - New user registered successfully: brutetest
+2025-05-24 07:18:38 - ERROR - FAIL: test_brute_force_protection - UserAuth.login() missing 1 required positional argument: 'mfa_code' - 
+2025-05-24 07:18:38 - INFO - Starting test: test_mfa_security
+2025-05-24 07:18:38 - INFO - Starting registration for user: mfatest
+2025-05-24 07:18:38 - INFO - Inserting new user: mfatest
+2025-05-24 07:18:38 - INFO - User created with ID: 1
+2025-05-24 07:18:44 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:18:44 - INFO - New user registered successfully: mfatest
+2025-05-24 07:18:45 - INFO - User: mfatest - Successful login: mfatest
+2025-05-24 07:18:45 - INFO - User: mfatest - User logged out: mfatest
+2025-05-24 07:18:46 - WARNING - Failed MFA verification for mfatest
+2025-05-24 07:18:47 - INFO - User: mfatest - Successful login: mfatest
+2025-05-24 07:18:47 - CRITICAL - VULNERABILITY [HIGH]: MFA_REPLAY_ATTACK - Old MFA code accepted (replay attack possible)
+2025-05-24 07:18:47 - INFO - PASS: test_mfa_security - MFA security validated
+2025-05-24 07:18:48 - INFO - Starting test: test_password_policy_enforcement
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - WARNING - Registration failed: Weak password
+2025-05-24 07:18:48 - INFO - PASS: test_password_policy_enforcement - Password policy properly enforced
+2025-05-24 07:18:48 - INFO - Starting test: test_session_management_security
+2025-05-24 07:18:48 - INFO - Starting registration for user: sessiontest
+2025-05-24 07:18:48 - INFO - Inserting new user: sessiontest
+2025-05-24 07:18:48 - INFO - User created with ID: 1
+2025-05-24 07:18:54 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:18:54 - INFO - New user registered successfully: sessiontest
+2025-05-24 07:18:54 - ERROR - FAIL: test_session_management_security - UserAuth.login() missing 1 required positional argument: 'mfa_code' - 
+2025-05-24 07:18:54 - INFO - Starting test: test_authorization_controls
+2025-05-24 07:18:54 - INFO - Starting registration for user: banktest
+2025-05-24 07:18:55 - INFO - Inserting new user: banktest
+2025-05-24 07:18:55 - INFO - User created with ID: 1
+2025-05-24 07:19:01 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:19:01 - INFO - New user registered successfully: banktest
+2025-05-24 07:19:01 - INFO - Starting test: test_data_encryption_in_storage
+2025-05-24 07:19:01 - INFO - Starting registration for user: banktest
+2025-05-24 07:19:01 - INFO - Inserting new user: banktest
+2025-05-24 07:19:01 - INFO - User created with ID: 1
+2025-05-24 07:19:07 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:19:07 - INFO - New user registered successfully: banktest
+2025-05-24 07:19:07 - INFO - Starting test: test_race_condition_protection
+2025-05-24 07:19:07 - INFO - Starting registration for user: banktest
+2025-05-24 07:19:08 - INFO - Inserting new user: banktest
+2025-05-24 07:19:08 - INFO - User created with ID: 1
+2025-05-24 07:19:14 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:19:14 - INFO - New user registered successfully: banktest
+2025-05-24 07:19:14 - INFO - Starting test: test_sql_injection_protection
+2025-05-24 07:19:14 - INFO - Starting registration for user: banktest
+2025-05-24 07:19:15 - INFO - Inserting new user: banktest
+2025-05-24 07:19:15 - INFO - User created with ID: 1
+2025-05-24 07:19:20 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:19:21 - INFO - New user registered successfully: banktest
+2025-05-24 07:19:21 - INFO - Starting test: test_transaction_integrity
+2025-05-24 07:19:21 - INFO - Starting registration for user: banktest
+2025-05-24 07:19:21 - INFO - Inserting new user: banktest
+2025-05-24 07:19:21 - INFO - User created with ID: 1
+2025-05-24 07:19:27 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:19:27 - INFO - New user registered successfully: banktest
+2025-05-24 07:19:27 - INFO - Starting test: test_error_information_disclosure
+2025-05-24 07:19:27 - ERROR - FAIL: test_error_information_disclosure - UserAuth.login() missing 1 required positional argument: 'mfa_code' - 
+2025-05-24 07:19:27 - INFO - Starting test: test_file_permissions
+2025-05-24 07:19:27 - INFO - PASS: test_file_permissions - File permissions checked
+2025-05-24 07:19:27 - INFO - Starting test: test_logging_security
+2025-05-24 07:19:27 - WARNING - SECURITY ISSUE [MEDIUM]: SENSITIVE_DATA_IN_LOGS - Potentially sensitive data found in logs: password["\s]*[:=]["\s]*\w+
+2025-05-24 07:19:27 - INFO - PASS: test_logging_security - Logging security validated
+2025-05-24 07:19:27 - INFO - Starting test: test_dos_protection
+2025-05-24 07:19:27 - WARNING - Registration failed: Invalid username format
+2025-05-24 07:19:27 - INFO - Starting registration for user: user0
+2025-05-24 07:19:28 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:28 - INFO - Starting registration for user: user1
+2025-05-24 07:19:28 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:28 - INFO - Starting registration for user: user2
+2025-05-24 07:19:28 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:28 - INFO - Starting registration for user: user3
+2025-05-24 07:19:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:29 - INFO - Starting registration for user: user4
+2025-05-24 07:19:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:29 - INFO - Starting registration for user: user5
+2025-05-24 07:19:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:30 - INFO - Starting registration for user: user6
+2025-05-24 07:19:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:30 - INFO - Starting registration for user: user7
+2025-05-24 07:19:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:30 - INFO - Starting registration for user: user8
+2025-05-24 07:19:31 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:31 - INFO - Starting registration for user: user9
+2025-05-24 07:19:31 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:31 - INFO - Starting registration for user: user10
+2025-05-24 07:19:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:32 - INFO - Starting registration for user: user11
+2025-05-24 07:19:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:32 - INFO - Starting registration for user: user12
+2025-05-24 07:19:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:32 - INFO - Starting registration for user: user13
+2025-05-24 07:19:33 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:33 - INFO - Starting registration for user: user14
+2025-05-24 07:19:33 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:33 - INFO - Starting registration for user: user15
+2025-05-24 07:19:34 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:34 - INFO - Starting registration for user: user16
+2025-05-24 07:19:34 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:34 - INFO - Starting registration for user: user17
+2025-05-24 07:19:35 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:35 - INFO - Starting registration for user: user18
+2025-05-24 07:19:35 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:35 - INFO - Starting registration for user: user19
+2025-05-24 07:19:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:36 - INFO - Starting registration for user: user20
+2025-05-24 07:19:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:36 - INFO - Starting registration for user: user21
+2025-05-24 07:19:37 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:37 - INFO - Starting registration for user: user22
+2025-05-24 07:19:37 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:37 - INFO - Starting registration for user: user23
+2025-05-24 07:19:38 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:38 - INFO - Starting registration for user: user24
+2025-05-24 07:19:38 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:38 - INFO - Starting registration for user: user25
+2025-05-24 07:19:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:39 - INFO - Starting registration for user: user26
+2025-05-24 07:19:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:39 - INFO - Starting registration for user: user27
+2025-05-24 07:19:40 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:40 - INFO - Starting registration for user: user28
+2025-05-24 07:19:40 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:40 - INFO - Starting registration for user: user29
+2025-05-24 07:19:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:41 - INFO - Starting registration for user: user30
+2025-05-24 07:19:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:41 - INFO - Starting registration for user: user31
+2025-05-24 07:19:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:41 - INFO - Starting registration for user: user32
+2025-05-24 07:19:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:42 - INFO - Starting registration for user: user33
+2025-05-24 07:19:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:42 - INFO - Starting registration for user: user34
+2025-05-24 07:19:43 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:43 - INFO - Starting registration for user: user35
+2025-05-24 07:19:43 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:43 - INFO - Starting registration for user: user36
+2025-05-24 07:19:44 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:44 - INFO - Starting registration for user: user37
+2025-05-24 07:19:44 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:44 - INFO - Starting registration for user: user38
+2025-05-24 07:19:45 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:45 - INFO - Starting registration for user: user39
+2025-05-24 07:19:45 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:45 - INFO - Starting registration for user: user40
+2025-05-24 07:19:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:46 - INFO - Starting registration for user: user41
+2025-05-24 07:19:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:46 - INFO - Starting registration for user: user42
+2025-05-24 07:19:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:46 - INFO - Starting registration for user: user43
+2025-05-24 07:19:47 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:47 - INFO - Starting registration for user: user44
+2025-05-24 07:19:47 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:47 - INFO - Starting registration for user: user45
+2025-05-24 07:19:48 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:48 - INFO - Starting registration for user: user46
+2025-05-24 07:19:48 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:48 - INFO - Starting registration for user: user47
+2025-05-24 07:19:48 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:48 - INFO - Starting registration for user: user48
+2025-05-24 07:19:49 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:49 - INFO - Starting registration for user: user49
+2025-05-24 07:19:49 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:49 - INFO - Starting registration for user: user50
+2025-05-24 07:19:50 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:50 - INFO - Starting registration for user: user51
+2025-05-24 07:19:50 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:50 - INFO - Starting registration for user: user52
+2025-05-24 07:19:51 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:51 - INFO - Starting registration for user: user53
+2025-05-24 07:19:51 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:51 - INFO - Starting registration for user: user54
+2025-05-24 07:19:52 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:52 - INFO - Starting registration for user: user55
+2025-05-24 07:19:52 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:52 - INFO - Starting registration for user: user56
+2025-05-24 07:19:53 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:53 - INFO - Starting registration for user: user57
+2025-05-24 07:19:53 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:53 - INFO - Starting registration for user: user58
+2025-05-24 07:19:53 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:53 - INFO - Starting registration for user: user59
+2025-05-24 07:19:54 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:54 - INFO - Starting registration for user: user60
+2025-05-24 07:19:54 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:54 - INFO - Starting registration for user: user61
+2025-05-24 07:19:55 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:55 - INFO - Starting registration for user: user62
+2025-05-24 07:19:55 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:55 - INFO - Starting registration for user: user63
+2025-05-24 07:19:56 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:56 - INFO - Starting registration for user: user64
+2025-05-24 07:19:56 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:56 - INFO - Starting registration for user: user65
+2025-05-24 07:19:57 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:57 - INFO - Starting registration for user: user66
+2025-05-24 07:19:57 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:57 - INFO - Starting registration for user: user67
+2025-05-24 07:19:58 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:58 - INFO - Starting registration for user: user68
+2025-05-24 07:19:58 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:58 - INFO - Starting registration for user: user69
+2025-05-24 07:19:59 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:59 - INFO - Starting registration for user: user70
+2025-05-24 07:19:59 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:19:59 - INFO - Starting registration for user: user71
+2025-05-24 07:20:00 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:00 - INFO - Starting registration for user: user72
+2025-05-24 07:20:00 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:00 - INFO - Starting registration for user: user73
+2025-05-24 07:20:00 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:00 - INFO - Starting registration for user: user74
+2025-05-24 07:20:01 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:01 - INFO - Starting registration for user: user75
+2025-05-24 07:20:01 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:01 - INFO - Starting registration for user: user76
+2025-05-24 07:20:02 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:02 - INFO - Starting registration for user: user77
+2025-05-24 07:20:02 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:02 - INFO - Starting registration for user: user78
+2025-05-24 07:20:03 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:03 - INFO - Starting registration for user: user79
+2025-05-24 07:20:03 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:03 - INFO - Starting registration for user: user80
+2025-05-24 07:20:03 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:03 - INFO - Starting registration for user: user81
+2025-05-24 07:20:04 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:04 - INFO - Starting registration for user: user82
+2025-05-24 07:20:04 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:04 - INFO - Starting registration for user: user83
+2025-05-24 07:20:05 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:05 - INFO - Starting registration for user: user84
+2025-05-24 07:20:05 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:05 - INFO - Starting registration for user: user85
+2025-05-24 07:20:05 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:05 - INFO - Starting registration for user: user86
+2025-05-24 07:20:06 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:06 - INFO - Starting registration for user: user87
+2025-05-24 07:20:06 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:06 - INFO - Starting registration for user: user88
+2025-05-24 07:20:06 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:06 - INFO - Starting registration for user: user89
+2025-05-24 07:20:07 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:07 - INFO - Starting registration for user: user90
+2025-05-24 07:20:07 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:07 - INFO - Starting registration for user: user91
+2025-05-24 07:20:08 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:08 - INFO - Starting registration for user: user92
+2025-05-24 07:20:09 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:09 - INFO - Starting registration for user: user93
+2025-05-24 07:20:09 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:09 - INFO - Starting registration for user: user94
+2025-05-24 07:20:10 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:10 - INFO - Starting registration for user: user95
+2025-05-24 07:20:10 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:10 - INFO - Starting registration for user: user96
+2025-05-24 07:20:11 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:11 - INFO - Starting registration for user: user97
+2025-05-24 07:20:11 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:11 - INFO - Starting registration for user: user98
+2025-05-24 07:20:12 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:12 - INFO - Starting registration for user: user99
+2025-05-24 07:20:12 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:20:12 - WARNING - SECURITY ISSUE [LOW]: PERFORMANCE_DOS_RISK - 100 registration attempts took 44.91s
+2025-05-24 07:20:12 - INFO - PASS: test_dos_protection - DoS protection adequate
+2025-05-24 07:20:12 - ERROR - FAIL: test_dos_protection - [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\786ab\\AppData\\Local\\Temp\\tmp268wn35_' - 
+2025-05-24 07:20:12 - INFO - Starting test: test_resource_limits
+2025-05-24 07:20:12 - INFO - Starting registration for user: perftest
+2025-05-24 07:20:13 - INFO - Inserting new user: perftest
+2025-05-24 07:20:13 - INFO - User created with ID: 1
+2025-05-24 07:20:13 - ERROR - Error generating backup codes: no such table: mfa_backup_codes
+2025-05-24 07:20:13 - INFO - New user registered successfully: perftest
+2025-05-24 07:20:13 - ERROR - FAIL: test_resource_limits - [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\786ab\\AppData\\Local\\Temp\\tmpjjdxlz3u' - 
+2025-05-24 07:20:13 - INFO - 
+================================================================================
+SECURITY TEST REPORT
+================================================================================
+Generated: 2025-05-24 07:20:13
+Log File: security_test_results_20250524_071828.log
+
+SUMMARY:
+- Total Tests: 14
+- Passed: 9
+- Failed: 5
+- Success Rate: 64.3%
+
+SECURITY ANALYSIS:
+- Vulnerabilities Found: 1
+- Security Issues: 7
+- Performance Issues: 1
+
+VULNERABILITIES:
+  [HIGH] MFA_REPLAY_ATTACK: Old MFA code accepted (replay attack possible)
+
+SECURITY ISSUES:
+  [MEDIUM] WEAK_ENCRYPTION: Encrypted data may not have sufficient entropy
+  [HIGH] WEAK_PASSWORD_ACCEPTED: System accepts weak password: password
+  [HIGH] WEAK_PASSWORD_ACCEPTED: System accepts weak password: 123456
+  [HIGH] WEAK_PASSWORD_ACCEPTED: System accepts weak password: admin
+  [HIGH] WEAK_PASSWORD_ACCEPTED: System accepts weak password: qwerty
+  [MEDIUM] SENSITIVE_DATA_IN_LOGS: Potentially sensitive data found in logs: password["\s]*[:=]["\s]*\w+
+  [LOW] PERFORMANCE_DOS_RISK: 100 registration attempts took 44.91s
+
+PERFORMANCE ISSUES:
+  password_hashing: 0.48s (threshold: 0.1s)
+
+================================================================================
+
+2025-05-24 07:20:13 - INFO - Detailed JSON report saved to: security_test_report_20250524_072013.json
+2025-05-24 07:21:45 - INFO - Starting test: test_authorization_controls
+2025-05-24 07:21:45 - INFO - Starting registration for user: banktest
+2025-05-24 07:21:45 - INFO - Inserting new user: banktest
+2025-05-24 07:21:46 - INFO - User created with ID: 1
+2025-05-24 07:21:51 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:21:51 - INFO - New user registered successfully: banktest
+2025-05-24 07:21:51 - INFO - Starting test: test_data_encryption_in_storage
+2025-05-24 07:21:51 - INFO - Starting registration for user: banktest
+2025-05-24 07:21:52 - INFO - Inserting new user: banktest
+2025-05-24 07:21:52 - INFO - User created with ID: 1
+2025-05-24 07:21:57 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:21:57 - INFO - New user registered successfully: banktest
+2025-05-24 07:21:57 - INFO - Starting test: test_race_condition_protection
+2025-05-24 07:21:57 - INFO - Starting registration for user: banktest
+2025-05-24 07:21:58 - INFO - Inserting new user: banktest
+2025-05-24 07:21:58 - INFO - User created with ID: 1
+2025-05-24 07:22:03 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:22:03 - INFO - New user registered successfully: banktest
+2025-05-24 07:22:03 - INFO - Starting test: test_sql_injection_protection
+2025-05-24 07:22:03 - INFO - Starting registration for user: banktest
+2025-05-24 07:22:04 - INFO - Inserting new user: banktest
+2025-05-24 07:22:04 - INFO - User created with ID: 1
+2025-05-24 07:22:09 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:22:09 - INFO - New user registered successfully: banktest
+2025-05-24 07:22:09 - INFO - Starting test: test_transaction_integrity
+2025-05-24 07:22:10 - INFO - Starting registration for user: banktest
+2025-05-24 07:22:10 - INFO - Inserting new user: banktest
+2025-05-24 07:22:10 - INFO - User created with ID: 1
+2025-05-24 07:22:15 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:22:16 - INFO - New user registered successfully: banktest
+2025-05-24 07:22:16 - INFO - Starting test: test_dos_protection
+2025-05-24 07:22:16 - WARNING - Registration failed: Invalid username format
+2025-05-24 07:22:16 - INFO - Starting registration for user: user0
+2025-05-24 07:22:16 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:16 - INFO - Starting registration for user: user1
+2025-05-24 07:22:16 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:16 - INFO - Starting registration for user: user2
+2025-05-24 07:22:17 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:17 - INFO - Starting registration for user: user3
+2025-05-24 07:22:17 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:17 - INFO - Starting registration for user: user4
+2025-05-24 07:22:17 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:17 - INFO - Starting registration for user: user5
+2025-05-24 07:22:18 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:18 - INFO - Starting registration for user: user6
+2025-05-24 07:22:18 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:18 - INFO - Starting registration for user: user7
+2025-05-24 07:22:18 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:18 - INFO - Starting registration for user: user8
+2025-05-24 07:22:18 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:18 - INFO - Starting registration for user: user9
+2025-05-24 07:22:19 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:19 - INFO - Starting registration for user: user10
+2025-05-24 07:22:19 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:19 - INFO - Starting registration for user: user11
+2025-05-24 07:22:19 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:19 - INFO - Starting registration for user: user12
+2025-05-24 07:22:20 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:20 - INFO - Starting registration for user: user13
+2025-05-24 07:22:20 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:20 - INFO - Starting registration for user: user14
+2025-05-24 07:22:20 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:20 - INFO - Starting registration for user: user15
+2025-05-24 07:22:21 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:21 - INFO - Starting registration for user: user16
+2025-05-24 07:22:21 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:21 - INFO - Starting registration for user: user17
+2025-05-24 07:22:22 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:22 - INFO - Starting registration for user: user18
+2025-05-24 07:22:22 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:22 - INFO - Starting registration for user: user19
+2025-05-24 07:22:22 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:22 - INFO - Starting registration for user: user20
+2025-05-24 07:22:23 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:23 - INFO - Starting registration for user: user21
+2025-05-24 07:22:23 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:23 - INFO - Starting registration for user: user22
+2025-05-24 07:22:23 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:23 - INFO - Starting registration for user: user23
+2025-05-24 07:22:24 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:24 - INFO - Starting registration for user: user24
+2025-05-24 07:22:24 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:24 - INFO - Starting registration for user: user25
+2025-05-24 07:22:24 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:24 - INFO - Starting registration for user: user26
+2025-05-24 07:22:25 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:25 - INFO - Starting registration for user: user27
+2025-05-24 07:22:25 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:25 - INFO - Starting registration for user: user28
+2025-05-24 07:22:25 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:25 - INFO - Starting registration for user: user29
+2025-05-24 07:22:26 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:26 - INFO - Starting registration for user: user30
+2025-05-24 07:22:26 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:26 - INFO - Starting registration for user: user31
+2025-05-24 07:22:26 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:26 - INFO - Starting registration for user: user32
+2025-05-24 07:22:27 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:27 - INFO - Starting registration for user: user33
+2025-05-24 07:22:27 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:27 - INFO - Starting registration for user: user34
+2025-05-24 07:22:27 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:27 - INFO - Starting registration for user: user35
+2025-05-24 07:22:27 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:27 - INFO - Starting registration for user: user36
+2025-05-24 07:22:28 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:28 - INFO - Starting registration for user: user37
+2025-05-24 07:22:28 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:28 - INFO - Starting registration for user: user38
+2025-05-24 07:22:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:29 - INFO - Starting registration for user: user39
+2025-05-24 07:22:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:29 - INFO - Starting registration for user: user40
+2025-05-24 07:22:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:29 - INFO - Starting registration for user: user41
+2025-05-24 07:22:29 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:29 - INFO - Starting registration for user: user42
+2025-05-24 07:22:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:30 - INFO - Starting registration for user: user43
+2025-05-24 07:22:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:30 - INFO - Starting registration for user: user44
+2025-05-24 07:22:30 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:30 - INFO - Starting registration for user: user45
+2025-05-24 07:22:31 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:31 - INFO - Starting registration for user: user46
+2025-05-24 07:22:31 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:31 - INFO - Starting registration for user: user47
+2025-05-24 07:22:31 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:31 - INFO - Starting registration for user: user48
+2025-05-24 07:22:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:32 - INFO - Starting registration for user: user49
+2025-05-24 07:22:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:32 - INFO - Starting registration for user: user50
+2025-05-24 07:22:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:32 - INFO - Starting registration for user: user51
+2025-05-24 07:22:32 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:32 - INFO - Starting registration for user: user52
+2025-05-24 07:22:33 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:33 - INFO - Starting registration for user: user53
+2025-05-24 07:22:33 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:33 - INFO - Starting registration for user: user54
+2025-05-24 07:22:33 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:33 - INFO - Starting registration for user: user55
+2025-05-24 07:22:34 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:34 - INFO - Starting registration for user: user56
+2025-05-24 07:22:34 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:34 - INFO - Starting registration for user: user57
+2025-05-24 07:22:34 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:34 - INFO - Starting registration for user: user58
+2025-05-24 07:22:35 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:35 - INFO - Starting registration for user: user59
+2025-05-24 07:22:35 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:35 - INFO - Starting registration for user: user60
+2025-05-24 07:22:35 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:35 - INFO - Starting registration for user: user61
+2025-05-24 07:22:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:36 - INFO - Starting registration for user: user62
+2025-05-24 07:22:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:36 - INFO - Starting registration for user: user63
+2025-05-24 07:22:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:36 - INFO - Starting registration for user: user64
+2025-05-24 07:22:36 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:36 - INFO - Starting registration for user: user65
+2025-05-24 07:22:37 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:37 - INFO - Starting registration for user: user66
+2025-05-24 07:22:37 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:37 - INFO - Starting registration for user: user67
+2025-05-24 07:22:37 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:37 - INFO - Starting registration for user: user68
+2025-05-24 07:22:38 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:38 - INFO - Starting registration for user: user69
+2025-05-24 07:22:38 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:38 - INFO - Starting registration for user: user70
+2025-05-24 07:22:38 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:38 - INFO - Starting registration for user: user71
+2025-05-24 07:22:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:39 - INFO - Starting registration for user: user72
+2025-05-24 07:22:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:39 - INFO - Starting registration for user: user73
+2025-05-24 07:22:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:39 - INFO - Starting registration for user: user74
+2025-05-24 07:22:39 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:39 - INFO - Starting registration for user: user75
+2025-05-24 07:22:40 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:40 - INFO - Starting registration for user: user76
+2025-05-24 07:22:40 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:40 - INFO - Starting registration for user: user77
+2025-05-24 07:22:40 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:40 - INFO - Starting registration for user: user78
+2025-05-24 07:22:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:41 - INFO - Starting registration for user: user79
+2025-05-24 07:22:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:41 - INFO - Starting registration for user: user80
+2025-05-24 07:22:41 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:41 - INFO - Starting registration for user: user81
+2025-05-24 07:22:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:42 - INFO - Starting registration for user: user82
+2025-05-24 07:22:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:42 - INFO - Starting registration for user: user83
+2025-05-24 07:22:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:42 - INFO - Starting registration for user: user84
+2025-05-24 07:22:42 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:42 - INFO - Starting registration for user: user85
+2025-05-24 07:22:43 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:43 - INFO - Starting registration for user: user86
+2025-05-24 07:22:43 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:43 - INFO - Starting registration for user: user87
+2025-05-24 07:22:43 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:43 - INFO - Starting registration for user: user88
+2025-05-24 07:22:44 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:44 - INFO - Starting registration for user: user89
+2025-05-24 07:22:44 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:44 - INFO - Starting registration for user: user90
+2025-05-24 07:22:44 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:44 - INFO - Starting registration for user: user91
+2025-05-24 07:22:45 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:45 - INFO - Starting registration for user: user92
+2025-05-24 07:22:45 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:45 - INFO - Starting registration for user: user93
+2025-05-24 07:22:45 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:45 - INFO - Starting registration for user: user94
+2025-05-24 07:22:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:46 - INFO - Starting registration for user: user95
+2025-05-24 07:22:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:46 - INFO - Starting registration for user: user96
+2025-05-24 07:22:46 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:46 - INFO - Starting registration for user: user97
+2025-05-24 07:22:47 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:47 - INFO - Starting registration for user: user98
+2025-05-24 07:22:47 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:47 - INFO - Starting registration for user: user99
+2025-05-24 07:22:47 - ERROR - SQLite error during registration: no such table: users
+2025-05-24 07:22:47 - WARNING - SECURITY ISSUE [LOW]: PERFORMANCE_DOS_RISK - 100 registration attempts took 31.63s
+2025-05-24 07:22:47 - INFO - PASS: test_dos_protection - DoS protection adequate
+2025-05-24 07:22:47 - ERROR - FAIL: test_dos_protection - [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\786ab\\AppData\\Local\\Temp\\tmpmc49a918' - 
+2025-05-24 07:22:47 - INFO - Starting test: test_resource_limits
+2025-05-24 07:22:47 - INFO - Starting registration for user: perftest
+2025-05-24 07:22:48 - INFO - Inserting new user: perftest
+2025-05-24 07:22:48 - INFO - User created with ID: 1
+2025-05-24 07:22:48 - ERROR - Error generating backup codes: no such table: mfa_backup_codes
+2025-05-24 07:22:48 - INFO - New user registered successfully: perftest
+2025-05-24 07:22:48 - ERROR - FAIL: test_resource_limits - [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\786ab\\AppData\\Local\\Temp\\tmp_vuaxok8' - 
+2025-05-24 07:22:48 - INFO - Starting test: test_brute_force_protection
+2025-05-24 07:22:48 - INFO - Starting registration for user: brutetest
+2025-05-24 07:22:48 - INFO - Inserting new user: brutetest
+2025-05-24 07:22:48 - INFO - User created with ID: 1
+2025-05-24 07:22:54 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:22:54 - INFO - New user registered successfully: brutetest
+2025-05-24 07:22:54 - ERROR - FAIL: test_brute_force_protection - UserAuth.login() missing 1 required positional argument: 'mfa_code' - 
+2025-05-24 07:22:54 - INFO - Starting test: test_mfa_security
+2025-05-24 07:22:54 - INFO - Starting registration for user: mfatest
+2025-05-24 07:22:54 - INFO - Inserting new user: mfatest
+2025-05-24 07:22:54 - INFO - User created with ID: 1
+2025-05-24 07:23:00 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:23:00 - INFO - New user registered successfully: mfatest
+2025-05-24 07:23:00 - INFO - User: mfatest - Successful login: mfatest
+2025-05-24 07:23:00 - INFO - User: mfatest - User logged out: mfatest
+2025-05-24 07:23:01 - WARNING - Failed MFA verification for mfatest
+2025-05-24 07:23:02 - INFO - User: mfatest - Successful login: mfatest
+2025-05-24 07:23:02 - CRITICAL - VULNERABILITY [HIGH]: MFA_REPLAY_ATTACK - Old MFA code accepted (replay attack possible)
+2025-05-24 07:23:02 - INFO - PASS: test_mfa_security - MFA security validated
+2025-05-24 07:23:02 - INFO - Starting test: test_password_policy_enforcement
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - WARNING - Registration failed: Weak password
+2025-05-24 07:23:02 - INFO - PASS: test_password_policy_enforcement - Password policy properly enforced
+2025-05-24 07:23:02 - INFO - Starting test: test_session_management_security
+2025-05-24 07:23:02 - INFO - Starting registration for user: sessiontest
+2025-05-24 07:23:03 - INFO - Inserting new user: sessiontest
+2025-05-24 07:23:03 - INFO - User created with ID: 1
+2025-05-24 07:23:08 - ERROR - Error generating backup codes: database is locked
+2025-05-24 07:23:08 - INFO - New user registered successfully: sessiontest
+2025-05-24 07:23:08 - WARNING - Login attempt with non-existent username: username
+2025-05-24 07:23:08 - ERROR - FAIL: test_session_management_security - False is not true - 
+2025-05-24 07:23:09 - INFO - Starting test: test_encryption_security
+2025-05-24 07:23:09 - WARNING - SECURITY ISSUE [MEDIUM]: WEAK_ENCRYPTION - Encrypted data may not have sufficient entropy
+2025-05-24 07:23:09 - INFO - PASS: test_encryption_security - Encryption is secure and robust
+2025-05-24 07:23:09 - INFO - Starting test: test_input_validation_security
+2025-05-24 07:23:09 - INFO - PASS: test_input_validation_security - Input validation resists injection attacks
+2025-05-24 07:23:09 - INFO - Starting test: test_password_hashing_security
+2025-05-24 07:23:09 - WARNING - PERFORMANCE: password_hashing took 0.39s (threshold: 0.1s)
+2025-05-24 07:23:11 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: password
+2025-05-24 07:23:11 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: 123456
+2025-05-24 07:23:11 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: admin
+2025-05-24 07:23:12 - WARNING - SECURITY ISSUE [HIGH]: WEAK_PASSWORD_ACCEPTED - System accepts weak password: qwerty
+2025-05-24 07:23:12 - INFO - PASS: test_password_hashing_security - Password hashing is secure
+2025-05-24 07:23:12 - INFO - Starting test: test_transaction_id_security
+2025-05-24 07:23:12 - INFO - PASS: test_transaction_id_security - Transaction IDs are secure and unique
+2025-05-24 07:23:12 - INFO - Starting test: test_error_information_disclosure
+2025-05-24 07:23:12 - ERROR - FAIL: test_error_information_disclosure - UserAuth.login() missing 1 required positional argument: 'mfa_code' - 
+2025-05-24 07:23:12 - INFO - Starting test: test_file_permissions
+2025-05-24 07:23:12 - INFO - PASS: test_file_permissions - File permissions checked
+2025-05-24 07:23:12 - INFO - Starting test: test_logging_security
+2025-05-24 07:23:12 - WARNING - SECURITY ISSUE [MEDIUM]: SENSITIVE_DATA_IN_LOGS - Potentially sensitive data found in logs: password["\s]*[:=]["\s]*\w+
+2025-05-24 07:23:12 - INFO - PASS: test_logging_security - Logging security validated
