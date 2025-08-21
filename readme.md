@@ -1,6 +1,6 @@
 # Secure Banking Application
 
-A comprehensive Python-based banking application that demonstrates advanced secure programming practices and comprehensive security testing by **Muhammad Abubakar** - Student Number: **L00172503**
+A comprehensive Python-based banking application that demonstrates advanced secure programming practices and comprehensive security.
 
 ## Project Overview
 
