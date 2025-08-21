@@ -240,9 +240,3 @@ qrcode[pil]>=7.4.0     # QR code generation for MFA setup
 ```
 
 
-## Author
-
-**Muhammad Abubakar**  
-Student Number: L00172503  
-Atlantic Technological University  
-Secure Programming Course
